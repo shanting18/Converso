@@ -1,0 +1,11 @@
+package Lista;
+
+public class ElegirMoneda{
+	
+	ConvertirMoneda  tiposDeMoneda;
+	
+	public void ElegirMoneda() {
+		tiposDeMoneda = new ConvertirMoneda();
+	}
+	
+}

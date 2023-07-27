@@ -1,0 +1,19 @@
+package Lista;
+
+import javax.swing.JOptionPane;
+
+public class ElegirMoneda{
+	
+	ConvertirMoneda tiposDeMoneda = new ConvertirMoneda();
+	
+	public  void ConvertirMoneda() {
+		
+		String Elegir = (JOptionPane.showInputDialog(null, "Elige la moneda que deseas convertir", "tiposDeMoneda", JOptionPane.QUESTION_MESSAGE, 
+				null, new Object[] {"Pesos a dolar","Pesos a euro","Pesos a librasEsterlinas","Pesos a yenJaponés","Pesos a wonsulCoreano"}, null)).toString();
+		
+		if(Elegir != null) {
+			
+		}
+	}
+	
+}

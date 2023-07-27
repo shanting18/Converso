@@ -1,0 +1,47 @@
+package Cuadro_de_dialogo;
+
+import javax.swing.JOptionPane;
+
+public class CuadroDeDialogo {
+	
+	public void Conevertir() {
+		
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Lista.ElegirMoneda conversion = new Lista.ElegirMoneda();
+		
+		
+		
+		while(true) {
+			String menuPrincipal = JOptionPane.showInputDialog(null, "Seleccione una opcion de conversión", "Convertidor", JOptionPane.QUESTION_MESSAGE, 
+					null, new Object[] {"Converidor de moneda","Convertidor de metro"}, null).toString();
+			
+			switch(menuPrincipal) {
+			
+			case "Converidor de moneda":
+				String resultado =JOptionPane.showInputDialog("Ingresa la cantidad de dinero que deseas convertir");
+					double valorResivido = Double.parseDouble(resultado);
+						conversion.ConvertirMoneda(valorResivido);
+				
+				int Terminar = JOptionPane.showConfirmDialog(null, "Desea continuar??");
+					if(JOptionPane.OK_OPTION == Terminar) {
+						System.out.println("");
+					}else {
+						JOptionPane.showMessageDialog(null, "Conversion finalizada");
+					}
+					while(false) {
+						
+					};
+			break;
+				
+			}
+			
+		}
+			
+	}
+
+}
+

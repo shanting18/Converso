@@ -1,0 +1,40 @@
+package Lista;
+
+import javax.swing.JOptionPane;
+
+public class ElegirMoneda{
+	
+	ConvertirMoneda tiposDeMoneda = new ConvertirMoneda();
+	
+	public  void ConvertirMoneda(double valor) {
+		
+		String Elegir = (JOptionPane.showInputDialog(null, "Elige la moneda que deseas convertir", "tiposDeMoneda", JOptionPane.QUESTION_MESSAGE, 
+				null, new Object[] {"Pesos a dolar","Pesos a euros","Pesos a libras Esterlinas","Pesos a yen Japonés","Pesos a won sur Coreano",
+						            "Dolar a pesos","Euros a pesos","Libras Esterlinas a pesos","Yen Japonés a pesos","Won sur Coreano a pesos"}, null)).toString();
+		
+		switch(Elegir) {
+		
+		case "Pesos a dolar":
+			tiposDeMoneda.PesoaDolar(valor);
+			break;
+		
+		case "Pesos a euros":
+			tiposDeMoneda.PesoaEuro(valor);
+			break;
+			
+		case "Pesos a libras Esterlinas":
+			tiposDeMoneda.PesoaLibrasEsterlinas(valor);
+			break;
+			
+		case "Pesos a yen Japonés":
+			tiposDeMoneda.PesoaYenJaponés(valor);
+			break;
+			
+		case "Pesos a won sur Coreano":
+			tiposDeMoneda.PesoaWonsulCoreano(valor);
+			break;
+			
+		}
+	}
+	
+}

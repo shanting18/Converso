@@ -1,0 +1,15 @@
+package ListaAlmacenamientoDeDatos;
+
+import javax.swing.JOptionPane;
+
+public class ElegirAlmacenamientoDeDatos {
+	
+	ConvertirAlmacenamientoDeDatos tiposDeDatos = new ConvertirAlmacenamientoDeDatos();
+	
+	public void ConvertirAlmacenamientoDeDatos(double valor) {
+		
+		String Elegir = (JOptionPane.showInputDialog(null, "Elige el tipo de dato que deseas convertir", "tipos de datos", JOptionPane.QUESTION_MESSAGE, 
+				null, new Object[] {"Pesos a dolar","Pesos a euros","Pesos a libras Esterlinas","Pesos a yen Japonés","Pesos a won sur Coreano",
+						            "Dolar a pesos","Euros a pesos","Libras Esterlinas a pesos","Yen Japonés a pesos","Won sur Coreano a pesos"}, null)).toString();
+	}
+}

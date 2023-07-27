@@ -1,0 +1,13 @@
+package Lista;
+
+import Lista.ConvertirMoneda;
+
+public class ElegirMoneda{
+	
+	ConvertirMoneda  tiposDeMoneda;
+	
+	public ElegirMoneda() {
+		tiposDeMoneda = new ConvertirMoneda();
+	}
+	
+}

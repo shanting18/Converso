@@ -1,0 +1,40 @@
+package Lista;
+
+import javax.swing.JOptionPane;
+
+public class ConvertirMoneda {
+	
+	public void PesoaDolar(double valor) {
+		double dolar = valor * 3988.00;
+		dolar = (double)Math.round(dolar);
+		JOptionPane.showMessageDialog(null, "Tienes " + dolar + "  dolar(es)");
+	}
+
+	public void PesoaEuro(double valor) {
+		double euro = valor * 4482.54;
+		euro = (double)Math.round(euro);
+		JOptionPane.showMessageDialog(null, "Tienes " + euro + "  euro(s)");
+	}
+	
+	public  PesoaLibrasEsterlinas(double valor) {
+		double librasEsterlinas = valor * 5352.38;
+		librasEsterlinas = (double)Math.round(librasEsterlinas);
+		JOptionPane.showMessageDialog(null, "Tienes " + librasEsterlinas + "  libras Esterlinas");
+
+	}
+	
+	public void PesoaYenJaponés(double valor) {
+		double yenJaponés = valor * 29.47;
+		yenJaponés = (double)Math.round(yenJaponés);
+		JOptionPane.showMessageDialog(null, "Tienes " + yenJaponés + "  yen Japonés");
+
+	}
+	
+	public void PesoaWonsulCoreano(double valor) {
+		double wonsulCoreano = valor * 3.22;
+		wonsulCoreano = (double)Math.round(wonsulCoreano);
+		JOptionPane.showMessageDialog(null, "Tienes " + wonsulCoreano + "  won sul Coreano");
+	}
+
+	
+}

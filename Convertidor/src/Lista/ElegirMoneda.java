@@ -1,0 +1,59 @@
+package Lista;
+
+import javax.swing.JOptionPane;
+
+public class ElegirMoneda{
+	
+	ConvertirMoneda tiposDeMoneda = new ConvertirMoneda();
+	
+	public void ConvertirMoneda(double valor) {
+		
+		String Elegir = (JOptionPane.showInputDialog(null, "Elige la moneda que deseas convertir", "tipos de monedas", JOptionPane.QUESTION_MESSAGE, 
+				null, new Object[] {"Pesos col a dolar","Pesos col  a euros","Pesos col a libras Esterlinas","Pesos col a yen Japonés","Pesos col a won sur Coreano",
+						            "Dolar a pesos col ","Euros a pesos col","Libras Esterlinas a pesos col","Yen Japonés a pesos col","Won sur Coreano a pesos col"}, null)).toString();
+		
+		switch(Elegir) {
+		
+		case "Pesos col a dolar":
+			tiposDeMoneda.PesoaDolar(valor);
+			break;
+		
+		case "Pesos col a euros":
+			tiposDeMoneda.PesoaEuro(valor);
+			break;
+			
+		case "Pesos a libras Esterlinas":
+			tiposDeMoneda.PesoaLibrasEsterlinas(valor);
+			break;
+			
+		case "Pesos col a yen Japonés":
+			tiposDeMoneda.PesoaYenJaponés(valor);
+			break;
+			
+		case "Pesos col a won sur Coreano":
+			tiposDeMoneda.PesoaWonsurCoreano(valor);
+			break;
+			
+		case "Dolar a pesos col":
+			tiposDeMoneda.DolaraPeso(valor);
+			break;	
+			
+		case "Euros a pesos col":
+			tiposDeMoneda.EuroaPeso(valor);
+			break;
+			
+		case "Libras Esterlinas a pesos col":
+			tiposDeMoneda.LibrasEsterlinasaPeso(valor);
+			break;
+			
+		case "Yen Japonés a pesos col":
+			tiposDeMoneda.YenJaponésaPeso(valor);
+			break;
+			
+		case "Won sur Coreano a pesos col":
+			tiposDeMoneda.WonsurCoreanoaPeso(valor);
+			break;	
+		}
+	}
+	
+}

@@ -1,0 +1,40 @@
+package ListaAlmacenamientoDeDatos;
+
+import javax.swing.JOptionPane;
+
+public class ConvertirAlmacenamientoDeDatos {
+	
+	public void BitaByte(double valor) {
+		double bit = valor * 0.125;
+		bit = (double)Math.round(bit);
+		JOptionPane.showMessageDialog(null, valor + "  Bit es igual a " + bit + "Byte(B)" );
+		
+	}
+	
+	public void Kilobitakilobyte(double valor) {
+		double kilobit = valor * 0.125;
+	}
+
+	public void Megabitamegabyte(double valor) {
+		double megabit = valor * 0.125;
+	}
+
+	public void Gigabitagigabyte(double valor) {
+		double gigabit = valor * 0.125;
+	}
+
+	public void Terabitaterabyte(double valor) {
+		double terabit = valor * 0.125;
+	}
+
+	public void Petabitapetabyte(double valor) {
+		double petabit = valor * 0.125;
+	
+	}
+
+	public void Exabitaexabyte(double valor) {
+		double exabit = valor * 0.125;
+	
+	}
+
+}

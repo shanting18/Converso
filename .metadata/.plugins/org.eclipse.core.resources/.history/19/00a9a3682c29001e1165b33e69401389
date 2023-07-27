@@ -1,0 +1,15 @@
+package ListaAlmacenamientoDeDatos;
+
+import javax.swing.JOptionPane;
+
+public class ElegirAlmacenamientoDeDatos {
+	
+	ConvertirAlmacenamientoDeDatos tiposDeDatos = new ConvertirAlmacenamientoDeDatos();
+	
+	public void ConvertirAlmacenamientoDeDatos(double valor) {
+		
+		String Elegir = (JOptionPane.showInputDialog(null, "Elige el tipo de dato que deseas convertir", "tipos de datos", JOptionPane.QUESTION_MESSAGE, 
+				null, new Object[] {"Bit a Byte","Kilobit a kilobyte","Megabit a megabyte","Gigabit a gigabyte","Terabit a terabyte",
+						            "Petabit a petabyte","Exabit a exabyte"}, null)).toString();
+	}
+}

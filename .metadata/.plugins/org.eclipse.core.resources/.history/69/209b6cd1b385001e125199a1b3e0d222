@@ -10,7 +10,7 @@ public class ElegirMoneda{
 		
 		String Elegir = (JOptionPane.showInputDialog(null, "Elige la moneda que deseas convertir", "tipos de monedas", JOptionPane.QUESTION_MESSAGE, 
 				null, new Object[] {"Pesos col a dolar","Pesos col a euros","Pesos col a libras Esterlinas","Pesos col a yen Japonés","Pesos col a won sur Coreano",
-						            "Dolar a pesos col","Euros a pesos col","Libras Esterlinas a pesos col","Yen Japonés a pesos col","Won sur Coreano a pesos col"}, null)).toString();
+						            "Dolar a pesos col ","Euros a pesos col","Libras Esterlinas a pesos col","Yen Japonés a pesos col","Won sur Coreano a pesos col"}, null)).toString();
 		
 		switch(Elegir) {
 		

@@ -34,7 +34,7 @@ public class ElegirMoneda{
 			tiposDeMoneda.PesoaWonsurCoreano(valor);
 			break;
 			
-		case "Dolar a pesos col":
+		case "Dolar col a pesos col":
 			tiposDeMoneda.DolaraPeso(valor);
 			break;	
 			

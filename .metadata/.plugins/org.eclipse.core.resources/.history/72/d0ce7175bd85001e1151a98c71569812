@@ -25,8 +25,7 @@ public class CuadroDeDialogo {
 			case "Converidor de moneda":
 				
 				String resultado =JOptionPane.showInputDialog("Ingresa la cantidad de dinero que deseas convertir");
-				
-					double valorResivido = Double.parseDouble(resultado);	
+					double valorResivido = Double.parseDouble(resultado);
 						conversion.ConvertirMoneda(valorResivido);
 						
 				
